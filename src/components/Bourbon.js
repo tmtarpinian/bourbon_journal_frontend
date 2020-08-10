@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Bourbon = () => {
+const Bourbon = (props) => {
   
   
     return (
@@ -8,7 +8,7 @@ const Bourbon = () => {
         <div className="content">
           
           <div className="bourbon">
-            <p>Name: </p>
+            <p>Name: {props.bourbon.name}</p>
             <p>Proof: </p>
           </div>
         </div>
@@ -25,3 +25,5 @@ export default Bourbon
 //<button onClick={this.props.DeleteBourbon}  id={this.props.pet.id}>Delete This Bourbon</button>
 
 //{this.props.pet.age}
+
+// {props.bourbon.name}

@@ -14,13 +14,17 @@ class BourbonsContainer extends Component{
         console.log(event.target.id)
     }
 
+ 
+
     render() {
-        // let categories = this.state.bourbons.map((bourbon, i) => {
-        //     return <Category key={i} category={category.strCategory} handleClick={this.handleClick} />
-        // })
+        const bourbons = this.props.bourbons.map((bourbon, i) =>
+         <Bourbon key={i} bourbon={bourbon} />
+        )
+       
         return (
             <div>
-                <Bourbon />
+                {/* <Bourbon /> */}
+                {bourbons}
             </div>
         )
     }
@@ -35,8 +39,8 @@ class BourbonsContainer extends Component{
   const mapStateToProps = (state) => {
   
     return { 
-        bourbons: state.bourbons,
-        loading: false
+        bourbons: state.bourbons.bourbons,
+        loading: state.bourbons.loading
     }
   }
 
