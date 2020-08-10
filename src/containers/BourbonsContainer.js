@@ -1,8 +1,8 @@
 import React, { Component} from 'react'
 import Bourbon from '../components/Bourbon'
+import { connect } from 'react-redux'
 
-
-class CategoriesContainer extends Component{
+class BourbonsContainer extends Component{
 
 
     state = {
@@ -11,7 +11,7 @@ class CategoriesContainer extends Component{
     }
 
     componentDidMount(){
-        fetch("http://localhost:3001")
+        fetch("http://localhost:3001/bourbons")
         .then(response => response.json())
         .then(data => {
             debugger
@@ -38,4 +38,15 @@ class CategoriesContainer extends Component{
     }
 }
 
-export default CategoriesContainer
+// const mapDispatchToProps = dispatch => {
+//     return {
+//       addRestaurant: (restaurant) => { dispatch(addRestaurant(restaurant)) }
+//     }
+//   }
+
+  const mapStateToProps = (state) => {
+  
+    return { bourbons: state.bourbons}
+  }
+
+export default connect (mapStateToProps)(BourbonsContainer)
