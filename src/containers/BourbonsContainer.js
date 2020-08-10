@@ -1,5 +1,5 @@
 import React, { Component} from 'react'
-import AddBourbon from '../components/AddBourbon'
+import Bourbon from '../components/Bourbon'
 
 const URL = 'https://localhost:3001'
 
@@ -33,7 +33,7 @@ class CategoriesContainer extends Component{
         // })
         return (
             <div>
-                <h2>I am a test bourbon page</h2>
+                <Bourbon />
             </div>
         )
     }
