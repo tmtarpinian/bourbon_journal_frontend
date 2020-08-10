@@ -22,58 +22,78 @@ class NewBourbon extends Component {
   handleOnSubmit = (event) => {
     event.preventDefault();
     this.props.newBourbon(this.state)     //check this works
+    this.setState({
+      name: "",
+      distillery: "",
+      proof: null,
+      aged: null,
+      flavornotes: "",
+      pairing: ""
+    })
   }
 
   render() {
     return(
       <form onSubmit={this.handleOnSubmit}>
         <p>
-          <input
-            type="text"
-            id="name"
-            onChange={this.handleInputChange}
-            placeholder="name"
-          />
+          <label> Name: <br/>
+            <input
+              type="text"
+              id="name"
+              onChange={this.handleInputChange}
+              placeholder="name"
+            />
+          </label>
         </p>
         <p>
-          <input
-            type="text"
-            id="distillery"
-            onChange={this.handleInputChange}
-            placeholder="distillery"
-          />
+          <label> Distillery: <br/>
+            <input
+              type="text"
+              id="distillery"
+              onChange={this.handleInputChange}
+              placeholder="Distillery"
+            />
+          </label>
         </p>
         <p>
-          <input
-            type="text"
-            id="proof"
-            onChange={this.handleInputChange}
-            placeholder="username"
-          />
+          <label> Proof: <br/>
+            <input
+              type="text"
+              id="proof"
+              onChange={this.handleInputChange}
+              placeholder="How Strong is This?"
+            />
+          </label>
         </p>
         <p>
-          <input
-            type="text"
-            id="aged"
-            onChange={this.handleInputChange}
-            placeholder="hometown"
-          />
+          <label> Aged: <br/>
+            <input
+              type="text"
+              id="aged"
+              onChange={this.handleInputChange}
+              placeholder="How Old?"
+            />
+          </label>
         </p>
         <p>
-          <input
-            type="textarea"
-            id="flavornotes"
-            onChange={this.handleInputChange}
-            placeholder="write the flavors you taste here"
-          />
+          <label> Flavornotes: <br/>
+            <input
+              type="textarea"
+              id="flavornotes"
+              onChange={this.handleInputChange}
+              placeholder="write the flavors you taste here"
+            />
+          </label>
         </p>
         <p>
-          <input
-            type="text"
-            id="pairing"
-            onChange={this.handleInputChange}
-            placeholder="pair it with any food?"
-          />
+          <label> Food Pairing: <br/>
+            <input
+              type="text"
+              id="pairing"
+              onChange={this.handleInputChange}
+              placeholder="pair it with any food?"
+            />
+          </label>
         </p>
         <input type="submit" />
       </form>
