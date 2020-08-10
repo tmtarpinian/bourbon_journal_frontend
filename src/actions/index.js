@@ -7,7 +7,7 @@ export const addBourbon = bourbon => {
   
   export const removeBourbon = id => {
     return {
-      type: 'REMOVE_Bourbon',
+      type: 'DELETE_Bourbon',
       id
     };
   };
