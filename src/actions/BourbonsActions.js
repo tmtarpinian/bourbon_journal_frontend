@@ -7,7 +7,7 @@ const allBourbons = () => {
     }
 }
 
-const addBourbon = bourbon => {
+const newBourbon = bourbon => {
     return {
       type: 'ADD_BOURBON',
       bourbon
@@ -23,6 +23,6 @@ const deleteBourbon = id => {
 
 export {
     allBourbons,
-    addBourbon,
+    newBourbon,
     deleteBourbon
   }

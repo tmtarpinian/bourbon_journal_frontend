@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import {addBourbon} from '../actions/BourbonsActions'
+import {newBourbon} from '../actions/BourbonsActions'
 
-class AddBourbon extends Component {
+class NewBourbon extends Component {
     state = {
         name: "",
         distillery: "",
         proof: null,
         aged: null,
         flavornotes: "",
-        pairing: "",
+        pairing: ""
     }
 
 
@@ -21,7 +21,7 @@ class AddBourbon extends Component {
 
   handleOnSubmit = (event) => {
     event.preventDefault();
-    this.props.addBourbon()
+    this.props.newBourbon(this.state)     //check this works
   }
 
   render() {
@@ -92,4 +92,4 @@ const mapStateToProps = (state) => {
 }
 
 
-export default connect(mapStateToProps, {addBourbon})(AddBourbon);
+export default connect(mapStateToProps, {newBourbon})(NewBourbon);
