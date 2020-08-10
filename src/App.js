@@ -1,7 +1,6 @@
 import React from 'react';
 import BourbonsContainer from './containers/BourbonsContainer'
-//import BourbonsContainer from './containers/BourbonsContainer'
-import AddBourbon from './components/AddBourbon'
+import AddBourbon from './containers/AddBourbon'
 import './App.css';
 
 function App() {
