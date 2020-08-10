@@ -1,7 +1,16 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
+import {addBourbon} from '../actions/BourbonsActions'
 
 class AddBourbon extends Component {
+    state = {
+        name: "",
+        distillery: "",
+        proof: null,
+        aged: null,
+        flavornotes: "",
+        pairing: "",
+    }
 
 
   handleInputChange = (event) => {
@@ -12,7 +21,7 @@ class AddBourbon extends Component {
 
   handleOnSubmit = (event) => {
     event.preventDefault();
-    this.props.dispatch({type: 'ADD_USER', user: this.state})
+    this.props.addBourbon()
   }
 
   render() {
@@ -21,7 +30,23 @@ class AddBourbon extends Component {
         <p>
           <input
             type="text"
-            id="username"
+            id="name"
+            onChange={this.handleInputChange}
+            placeholder="name"
+          />
+        </p>
+        <p>
+          <input
+            type="text"
+            id="distillery"
+            onChange={this.handleInputChange}
+            placeholder="distillery"
+          />
+        </p>
+        <p>
+          <input
+            type="text"
+            id="proof"
             onChange={this.handleInputChange}
             placeholder="username"
           />
@@ -29,9 +54,25 @@ class AddBourbon extends Component {
         <p>
           <input
             type="text"
-            id="hometown"
+            id="aged"
             onChange={this.handleInputChange}
             placeholder="hometown"
+          />
+        </p>
+        <p>
+          <input
+            type="textarea"
+            id="flavornotes"
+            onChange={this.handleInputChange}
+            placeholder="write the flavors you taste here"
+          />
+        </p>
+        <p>
+          <input
+            type="text"
+            id="pairing"
+            onChange={this.handleInputChange}
+            placeholder="pair it with any food?"
           />
         </p>
         <input type="submit" />
@@ -51,4 +92,4 @@ const mapStateToProps = (state) => {
 }
 
 
-export default connect(mapStateToProps)(AddBourbon);
+export default connect(mapStateToProps, {addBourbon})(AddBourbon);
