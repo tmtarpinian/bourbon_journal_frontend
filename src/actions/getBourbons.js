@@ -7,4 +7,22 @@ const getBourbons = () => {
     }
 }
 
-export default getBourbons
+const addBourbon = bourbon => {
+    return {
+      type: 'ADD_BOURBON',
+      bourbon
+    };
+  };
+  
+const removeBourbon = id => {
+    return {
+      type: 'DELETE_Bourbon',
+      id
+    };
+  };
+
+export {
+    getBourbons,
+    addBourbon,
+    removeBourbon
+  }

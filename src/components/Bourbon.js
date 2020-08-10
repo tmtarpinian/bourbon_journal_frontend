@@ -9,7 +9,7 @@ const Bourbon = (props) => {
           
           <div className="bourbon">
             <p>Name: {props.bourbon.name}</p>
-            <p>Proof: </p>
+            <p>Proof: {props.bourbon.proof}</p>
           </div>
         </div>
         <div className="delete-button">
@@ -23,7 +23,3 @@ export default Bourbon
 
 
 //<button onClick={this.props.DeleteBourbon}  id={this.props.pet.id}>Delete This Bourbon</button>
-
-//{this.props.pet.age}
-
-// {props.bourbon.name}

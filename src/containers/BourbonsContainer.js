@@ -1,7 +1,7 @@
 import React, { Component} from 'react'
 import Bourbon from '../components/Bourbon'
 import { connect } from 'react-redux'
-import getBourbons from '../actions/getBourbons'
+import {getBourbons} from '../actions/getBourbons'
 
 
 class BourbonsContainer extends Component{
@@ -23,7 +23,6 @@ class BourbonsContainer extends Component{
        
         return (
             <div>
-                {/* <Bourbon /> */}
                 {bourbons}
             </div>
         )
@@ -37,7 +36,7 @@ class BourbonsContainer extends Component{
 //   }
 
   const mapStateToProps = (state) => {
-  
+    
     return { 
         bourbons: state.bourbons.bourbons,
         loading: state.bourbons.loading
