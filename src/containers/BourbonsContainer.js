@@ -1,7 +1,6 @@
 import React, { Component} from 'react'
 import Bourbon from '../components/Bourbon'
 
-const URL = 'https://localhost:3001'
 
 class CategoriesContainer extends Component{
 
@@ -12,7 +11,7 @@ class CategoriesContainer extends Component{
     }
 
     componentDidMount(){
-        fetch(URL)
+        fetch("http://localhost:3001")
         .then(response => response.json())
         .then(data => {
             debugger
