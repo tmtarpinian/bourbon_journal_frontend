@@ -7,6 +7,12 @@ function bourbonReducer(
     ) {
     let idx;
     switch (action.type) {
+        case 'LOADING_BOURBONS':
+            return {...state, loading: true};
+        
+        case 'BOURBONS':
+            return {...state, bourbons: action.payload, loading: false};
+
         case 'ADD_BOURBON':
             return [...state, action.book];
 

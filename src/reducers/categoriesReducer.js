@@ -1,6 +1,6 @@
 function categoriesReducer(
     state = {
-      bourbons: [], 
+      categories: [], 
       loading: false
     },
     action
@@ -8,10 +8,10 @@ function categoriesReducer(
     let idx;
     switch (action.type) {
         case 'ADD_CATEGORY':
-            return [...state, action.book];
+            return [...state, action.category];
 
         case 'DELETE_CATEGORY':
-            idx = state.findIndex(bourbon => bourbon.id  === action.id)
+            idx = state.findIndex(category => category.id  === action.id)
             return [...state.slice(0, idx), ...state.slice(idx + 1)];
    
         default:

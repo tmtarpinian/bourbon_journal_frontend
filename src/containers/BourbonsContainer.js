@@ -1,17 +1,13 @@
 import React, { Component} from 'react'
 import Bourbon from '../components/Bourbon'
 import { connect } from 'react-redux'
+import getBourbons from '../actions/getBourbons'
+
 
 class BourbonsContainer extends Component{
 
     componentDidMount(){
-        fetch("/bourbons")
-        .then(response => response.json())
-        .then(data => {
-            this.setState({
-                bourbons: data
-            })
-        })
+     this.props.getBourbons()
     }
 
     handleClick = (event) => {
@@ -38,7 +34,10 @@ class BourbonsContainer extends Component{
 
   const mapStateToProps = (state) => {
   
-    return { bourbons: state.bourbons}
+    return { 
+        bourbons: state.bourbons,
+        loading: false
+    }
   }
 
-export default connect (mapStateToProps)(BourbonsContainer)
+export default connect (mapStateToProps, {getBourbons})(BourbonsContainer)
