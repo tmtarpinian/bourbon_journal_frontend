@@ -13,8 +13,8 @@ function bourbonReducer(
         case 'BOURBONS':
             return {...state, bourbons: action.payload, loading: false};
 
-        case 'ADD_BOURBON':
-            return [...state, action.book];
+        case 'NEW_BOURBON':
+            return {...state, bourbons: [...state.bourbons, action.payload], loading: false}     
 
         case 'DELETE_BOURBON':
             idx = state.findIndex(bourbon => bourbon.id  === action.id)
