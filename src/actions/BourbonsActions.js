@@ -1,4 +1,4 @@
-const getBourbons = () => {
+const allBourbons = () => {
     return dispatch => {
         dispatch({type: 'LOADING_BOURBONS'})
         fetch("http://localhost:3001/bourbons")
@@ -14,7 +14,7 @@ const addBourbon = bourbon => {
     };
   };
   
-const removeBourbon = id => {
+const deleteBourbon = id => {
     return {
       type: 'DELETE_Bourbon',
       id
@@ -22,7 +22,7 @@ const removeBourbon = id => {
   };
 
 export {
-    getBourbons,
+    allBourbons,
     addBourbon,
-    removeBourbon
+    deleteBourbon
   }
