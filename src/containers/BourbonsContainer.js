@@ -4,20 +4,12 @@ import { connect } from 'react-redux'
 
 class BourbonsContainer extends Component{
 
-
-    state = {
-        bourbons: [],
-        bourbon: ""
-    }
-
     componentDidMount(){
-        fetch("http://localhost:3001/bourbons")
+        fetch("/bourbons")
         .then(response => response.json())
         .then(data => {
-            debugger
-            console.log(data)
             this.setState({
-                bourbons: data.results
+                bourbons: data
             })
         })
     }
