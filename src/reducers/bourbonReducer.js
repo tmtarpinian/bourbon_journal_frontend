@@ -1,6 +1,7 @@
 function bourbonReducer(
     state = {
-      bourbons: []
+      bourbons: [], 
+      loading: false
     },
     action
     ) {
