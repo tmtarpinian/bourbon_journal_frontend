@@ -10132,7 +10132,32 @@ h3 {
     font-size: 1.5em;
   }
 }
-.masthead {
+/* THIS IS WHERE I INSERT*/
+header.masthead {
+  position: relative;
+  background-color: #343a40;
+  background: url('bourbon.jpg') no-repeat center center;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+header.masthead .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+header.masthead h1 {
+  font-size: 2rem;
+}
+
+/* THIS IS WHERE I INSERT*/
+/* .masthead {
   padding-top: calc(6rem + 74px);
   padding-bottom: 6rem;
 }
@@ -10145,7 +10170,7 @@ h3 {
 }
 .masthead .masthead-avatar {
   width: 15rem;
-}
+} */
 
 @media (min-width: 992px) {
   .masthead {
