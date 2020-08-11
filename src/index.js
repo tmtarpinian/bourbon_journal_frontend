@@ -1,16 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension'
 import thunk from 'redux-thunk'
+
+import './index.css';
+import App from './App';
 import indexReducer from './reducers/index';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import Masthead from './components/Masthead';
 
 const store = createStore(indexReducer, composeWithDevTools(applyMiddleware(thunk)));
 
@@ -20,19 +22,7 @@ ReactDOM.render(
       <div>
      <Header />
 
-                {/* -- Masthead -- */}
-        <header class="masthead text-white text-center">
-          <div class="overlay"></div>
-          <div class="container">
-            <div class="row">
-              <div class="col-xl-9 mx-auto">
-                <h1 class="mb-5">BOJO</h1>
-                <h2 class="mb-5">A Sanctuary for the Bourbon Curate</h2>
-
-              </div>
-            </div>
-          </div>
-        </header>
+           <Masthead />
 
         <Route exact path="/bourbons" component={App} />
 
