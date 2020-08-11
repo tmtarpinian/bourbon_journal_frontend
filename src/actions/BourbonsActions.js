@@ -24,14 +24,20 @@ const newBourbon = bourbon => {
 }
   
 const deleteBourbon = id => {
-    return {
-      type: 'DELETE_Bourbon',
-      id
-    };
+    return (dispatch) => {
+      fetch(`http://localhost:3001/bourbons/${id}`, {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        }
+    })
+    .then(() => dispatch({type: 'DELETE_BOURBON', payload: id}))
+    }
   };
 
 export {
     allBourbons,
     newBourbon,
     deleteBourbon
-  }
+}

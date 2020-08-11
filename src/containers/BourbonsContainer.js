@@ -1,7 +1,7 @@
 import React, { Component} from 'react'
 import Bourbon from '../components/Bourbon'
 import { connect } from 'react-redux'
-import {allBourbons} from '../actions/BourbonsActions'
+import { allBourbons, deleteBourbon } from '../actions/BourbonsActions'
 
 
 class BourbonsContainer extends Component{
@@ -10,12 +10,12 @@ class BourbonsContainer extends Component{
      this.props.allBourbons()
     }
 
-    handleClick = (event) => {
-        console.log(event.target.id)
+    deleteOnSubmit = (event) => {
+        this.props.deleteBourbon(event.target.id)
     }
 
     render() {
-        const bourbons = this.props.bourbons.map((bourbon, i) => <Bourbon key={i} bourbon={bourbon} />)
+        const bourbons = this.props.bourbons.map((bourbon, i) => <Bourbon key={i} bourbon={bourbon} deleteButton={this.deleteOnSubmit}/>)
         return (
             <div>
                 {bourbons}
@@ -32,4 +32,4 @@ const mapStateToProps = (state) => {
     }
 }
 
-export default connect (mapStateToProps, {allBourbons})(BourbonsContainer)
+export default connect (mapStateToProps, {allBourbons, deleteBourbon})(BourbonsContainer)

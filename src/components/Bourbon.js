@@ -2,7 +2,6 @@ import React from 'react'
 
 const Bourbon = (props) => {
   
-  
     return (
       <div className="card">
         <div className="content">
@@ -13,13 +12,10 @@ const Bourbon = (props) => {
           </div>
         </div>
         <div className="delete-button">
-          <button>Delete This Bourbon</button>
+          <button onClick={props.deleteButton} id={props.bourbon.id}>Delete This Bourbon</button>
         </div>
       </div>
     )
 }
 
 export default Bourbon
-
-
-//<button onClick={this.props.DeleteBourbon}  id={this.props.pet.id}>Delete This Bourbon</button>
