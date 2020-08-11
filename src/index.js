@@ -10,9 +10,8 @@ import thunk from 'redux-thunk'
 import './index.css';
 import App from './App';
 import indexReducer from './reducers/index';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import Masthead from './components/Masthead';
+import {Header, MastHead, Footer} from './components/StaticElements';
+
 
 const store = createStore(indexReducer, composeWithDevTools(applyMiddleware(thunk)));
 
@@ -22,7 +21,7 @@ ReactDOM.render(
       <div>
      <Header />
 
-           <Masthead />
+           <MastHead />
 
         <Route exact path="/bourbons" component={App} />
 
