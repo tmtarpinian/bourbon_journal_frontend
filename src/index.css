@@ -74,6 +74,37 @@ body {
   outline: 0 !important;
 }
 
+/* -----------------KEEP BELOW ----------------- */
+
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+.btn-block + .btn-block {
+  margin-top: 0.5rem;
+}
+
+input[type=submit].btn-block,
+input[type=reset].btn-block,
+input[type=button].btn-block {
+  width: 250px;
+} 
+
+/* -----------------KEEP ABOVE ----------------- */
+
+#new-bourbon {
+  display: block; 
+  text-align: center;
+  position: relative;
+  color: #fff;
+  background-color: #343a40;
+  background: url('casks2.jpg') no-repeat center center;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
 hr {
   box-sizing: content-box;
   height: 0;
@@ -2469,11 +2500,12 @@ a.btn.disabled,
 fieldset:disabled a.btn {
   pointer-events: none;
 }
-
+/* --------------------KEEP BELOW ------------------- */
 .btn-primary {
   color: #fff;
-  background-color: #1abc9c;
-  border-color: #1abc9c;
+  background-color: #edb458;
+  border-color: #EDB458;
+ 
 }
 .btn-primary:hover {
   color: #fff;
@@ -2499,6 +2531,7 @@ fieldset:disabled a.btn {
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(60, 198, 171, 0.5);
 }
+/* --------------------KEEP Above -------------------  */
 
 .btn-secondary {
   color: #fff;
@@ -2939,20 +2972,6 @@ fieldset:disabled a.btn {
   font-size: 0.875rem;
   line-height: 1.5;
   border-radius: 0.25rem;
-}
-
-.btn-block {
-  display: block;
-  width: 100%;
-}
-.btn-block + .btn-block {
-  margin-top: 0.5rem;
-}
-
-input[type=submit].btn-block,
-input[type=reset].btn-block,
-input[type=button].btn-block {
-  width: 100%;
 }
 
 .fade {
@@ -10089,13 +10108,13 @@ h3 {
   color: #fff;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #1abc9c;
+  color: #EDB458;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
   color: #fff;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #1abc9c;
+  color: #EDB458;
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
@@ -10156,7 +10175,26 @@ header.masthead h1 {
   font-size: 2rem;
 }
 
-/* THIS IS WHERE I INSERT*/
+.call-to-action {
+  position: relative;
+  background-color: #343a40;
+  background: url("#") no-repeat center center;
+  background-size: cover;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.call-to-action .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+/* THIS IS WHERE I STOPPED INSERT*/
 /* .masthead {
   padding-top: calc(6rem + 74px);
   padding-bottom: 6rem;

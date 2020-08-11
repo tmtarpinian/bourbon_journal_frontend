@@ -5,8 +5,8 @@ const Header = () => {
         <div>
              {/* -----------Navigation-------------- */}
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-            <div class="container">
-                
+            <div className="container">
+            <a class="navbar-brand js-scroll-trigger" href="/bourbons">BOJO</a>
                 <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
@@ -33,7 +33,13 @@ const MastHead = () => {
           <div class="container">
             <div class="row">
               <div class="col-xl-9 mx-auto">
-                <h1 class="mb-5">BOJO</h1>
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
                 <h2 class="mb-5">A Sanctuary for the Bourbon Curate</h2>
 
               </div>
