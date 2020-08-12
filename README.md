@@ -33,7 +33,12 @@ Special thanks to David T. Miller for the use of his header/footer designs, whic
 
 I also adopted his masthead from his landing page theme here: https://github.com/StartBootstrap/startbootstrap-landing-page.
 
+Photo of whiskey glass by Joost Crop https://unsplash.com/@smallcamerabigpictures
+
+Picture of casks by Daniel Norris https://unsplash.com/@danielnorris
+
+Gold background by pinkzebra https://pixabay.com/users/pinkzebra-1836151/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1123653
+
 ## Code of Conduct
 
 Everyone interacting in the IdeTest project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/ferrisbueller66/FoodShare/blob/master/CODE_OF_CONDUCT.md).
-

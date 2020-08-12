@@ -94,12 +94,24 @@ input[type=button].btn-block {
 
 /* -----------------KEEP ABOVE ----------------- */
 
+#bourbon-categories{
+  display: block; 
+  text-align: center;
+  position: relative;
+  background: url('gold-background.jpg') no-repeat center center;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+}
+
 #bourbon-category{
   display: block; 
   text-align: center;
   position: relative;
-  text-align: center;
-  /* background: url('wall.jpg') no-repeat center center; */
+  background: #2C3F51;
+  color: #fff;
+  font-weight: 900;
+  margin: 1rem;
   background-size: cover;
   padding-top: 8rem;
   padding-bottom: 8rem;
