@@ -15,10 +15,11 @@ class CategoriesContainer extends Component{
     // }
 
     render() {
-        const categories = this.props.categories.map((category, i) => <Category key={i} category={category} deleteButton={this.deleteOnSubmit}/>)
+        const categories = this.props.categories.map((category, i) => <li><Category key={i} category={category} deleteButton={this.deleteOnSubmit}/></li>)
         return (
             <div>
-                {categories}
+                <h2>Your Categories</h2>
+                <ul> {categories}</ul>
             </div>
         )
     }

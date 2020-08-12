@@ -94,6 +94,17 @@ input[type=button].btn-block {
 
 /* -----------------KEEP ABOVE ----------------- */
 
+#bourbon-category{
+  display: block; 
+  text-align: center;
+  position: relative;
+  text-align: center;
+  /* background: url('wall.jpg') no-repeat center center; */
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
 #new-bourbon {
   display: block; 
   text-align: center;

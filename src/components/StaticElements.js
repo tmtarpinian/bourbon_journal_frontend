@@ -41,7 +41,7 @@ const MastHead = () => {
                   <br />
                   <br />
                   <br />
-                <h2 class="mb-5">A Sanctuary for the Bourbon Curate</h2>
+                <h1 class="mb-5">A Sanctuary for the Bourbon Curate</h1>
 
               </div>
             </div>
