@@ -75,8 +75,8 @@ body {
 }
 
 /* -----------------KEEP BELOW ----------------- */
-/* blue: 2C3F51 */
-/* gold: 2C3F51 */
+/* blue: 2c3e50 */
+/* gold: EDB458 */
 
 .btn-block {
   display: block;
@@ -108,9 +108,9 @@ input[type=button].btn-block {
   display: block; 
   text-align: center;
   position: relative;
-  background: #2C3F51;
+  background: #2c3e50;
   color: #fff;
-  font-weight: 900;
+  
   margin: 1rem;
   background-size: cover;
   padding-top: 8rem;
@@ -10122,6 +10122,8 @@ h3 {
   padding-bottom: 1rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
+  border-bottom: 1px solid;
+  border-bottom-color: #EDB458;
 }
 #mainNav .navbar-brand {
   color: #fff;
