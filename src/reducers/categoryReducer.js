@@ -14,7 +14,7 @@ function categoryReducer(
             return {...state, categories: action.payload, loading: false};
 
         case 'NEW_CATEGORY':
-            return {...state, bourbons: [...state.bourbons, action.payload], loading: false}     
+            return {...state, categories: [...state.categories, action.payload], loading: false}     
 
         case 'DELETE_CATEGORY':
             idx = state.findIndex(category => category.id  === action.id)

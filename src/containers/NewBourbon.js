@@ -4,6 +4,7 @@ import {newBourbon} from '../actions/BourbonsActions'
 
 class NewBourbon extends Component {
     state = {
+        category_id: null,
         name: "",
         distillery: "",
         proof: null,
@@ -15,6 +16,12 @@ class NewBourbon extends Component {
   handleInputChange = (event) => {
     this.setState({
       [event.target.id]: event.target.value
+    });
+  }
+
+  handleCategoryChange = (event) => {
+    this.setState({
+      category_id: event.target.value
     });
   }
 
@@ -40,6 +47,19 @@ class NewBourbon extends Component {
       <div id="new-bourbon">
         <h2> Add Your Boubon Here</h2>
         <form onSubmit={this.handleOnSubmit}>
+          <p>
+            <label>
+              Pick A Category:
+              <br/>
+              <br/>
+              <select className="form-control" value={this.state.value} onChange={this.handleCategoryChange}>
+                <option value="grapefruit">Grapefruit</option>
+                <option value="lime">Lime</option>
+                <option value="coconut">Coconut</option>
+                <option value="mango">Mango</option>
+              </select>
+            </label>
+          </p>
           <p>
             <label> Name: <br/>
               <input className="form-control"

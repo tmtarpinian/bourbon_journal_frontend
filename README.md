@@ -41,3 +41,19 @@ Photo of whiskey glass by Joost Crop https://unsplash.com/@smallcamerabigpicture
 Picture of casks by Daniel Norris https://unsplash.com/@danielnorris
 
 Gold background by pinkzebra https://pixabay.com/users/pinkzebra-1836151/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1123653
+
+
+
+1. install serializers
+2. run new seed data
+3. ensure associations are correct
+4. make "new" categories?
+    A. Make a Create New Button on the bottom of the index view
+    B. This should be last?
+5. update create bourbons to 
+    A. have a drop down of all categories with all ids
+    B. hidden form field with parent_id
+    C. Make sure new fetch returns
+6. Make Categories View that shows all bourbons for that category
+7. Add a NavLink to each Category card, incorporating their ID and creating a Restful route
+8. Fix the cards
