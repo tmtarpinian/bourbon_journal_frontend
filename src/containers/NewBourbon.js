@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import {newBourbon} from '../actions/BourbonsActions'   
+import {newBourbon} from '../actions/BourbonsActions'
+import { allCategories } from '../actions/CategoriesActions'
 
 class NewBourbon extends Component {
     state = {
@@ -12,6 +13,10 @@ class NewBourbon extends Component {
         flavornotes: "",
         pairing: ""
     }
+    // fetched all categories to state on mount so accessible in form selections input
+  componentDidMount(){
+    this.props.allCategories()
+    }
 
   handleInputChange = (event) => {
     this.setState({
@@ -20,6 +25,7 @@ class NewBourbon extends Component {
   }
 
   handleCategoryChange = (event) => {
+    debugger
     this.setState({
       category_id: event.target.value
     });
@@ -27,10 +33,10 @@ class NewBourbon extends Component {
 
   handleOnSubmit = (event) => {
     event.preventDefault();
-    
+    debugger
 
-    this.props.newBourbon(this.state)     
-    this.setState({               
+    this.props.newBourbon(this.state)
+    this.setState({
       name: "",
       distillery: "",
       proof: null,
@@ -39,10 +45,12 @@ class NewBourbon extends Component {
       pairing: ""
     })
     this.props.history.push('/bourbons')
-    
+
   }
 
   render() {
+    // const categories = this.props.categories.map((category, i) => {id, name})
+
     return(
       <div id="new-bourbon">
         <h2> Add Your Boubon Here</h2>
@@ -52,11 +60,13 @@ class NewBourbon extends Component {
               Pick A Category:
               <br/>
               <br/>
-              <select className="form-control" value={this.state.value} onChange={this.handleCategoryChange}>
-                <option value="grapefruit">Grapefruit</option>
+              <select className="form-control" id="category" value={this.state.category_id} onChange={this.handleInputChange}>
+                {/* <option value="grapefruit">Grapefruit</option>
                 <option value="lime">Lime</option>
                 <option value="coconut">Coconut</option>
                 <option value="mango">Mango</option>
+                {categories} */}
+                {this.props.categories.map((category) => <option key={category.id} value={category.id}>{category.name}</option>)}
               </select>
             </label>
           </p>
@@ -127,4 +137,11 @@ class NewBourbon extends Component {
   }
 }
 
-export default connect(null, {newBourbon})(NewBourbon);
+const mapStateToProps = (state) => {
+
+  return {
+      categories: state.categories.categories
+  }
+}
+
+export default connect(mapStateToProps, {newBourbon, allCategories})(NewBourbon);
