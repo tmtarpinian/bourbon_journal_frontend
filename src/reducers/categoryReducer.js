@@ -1,4 +1,4 @@
-function categoriesReducer(
+function categoryReducer(
     state = {
       categories: [], 
       loading: false
@@ -25,4 +25,4 @@ function categoriesReducer(
     }
 }
 
-export default categoriesReducer
+export default categoryReducer

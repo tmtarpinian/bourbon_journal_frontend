@@ -1,27 +1,30 @@
 # bourbon_journal_frontend
 
-This program was created to help people track to help manage food pantry and non-profit donations.
-
-This web application allows a user to create a model representing a visit or delivery to a food pantry, and record a list of items to donate to that particular organization on that visit. 
-
-Users can add multiple items per visit, and add the same organization they visit multiple times, allowing for the logging of different dates.
+This React app utilizes Redux and allows users to journal the flavor profiles and tasting of different whiskeys. Data can persisted with a Ruby on Rails backend and SQLite3 database.
 
 ## Usage
 
-To use SoodSoure, download a zipped file from Github (https://github.com/ferrisbueller66/FoodShare).
-Please have ruby, rails, and node.js installed prior to running this application.
+To use SoodSoure, download a zipped file from Github (https://github.com/tmtarpinian/bourbon_journal_frontend).
 
-After unzipping and saving the contents to the desired directory, and run 'bundle install' to install all the gems required for this program.
+Please have ruby, rails, node.js, and react installed prior to running this application.
 
-From within that directory, run 'rails s' in your terminal, then open 'localhost:3000' (or the listening port stated in your terminal) in a web browser.
+After unzipping and saving the contents to the desired directory, and run 'npm install' to install all the packages required for this program.
 
-Finally, open the index.html file in a web browser.
+From within that directory, run 'npm' in your terminal, then open 'localhost:3000' (or the listening port stated in your terminal) in a web browser.
 
-The close the program, exit your web browser and type 'contrl/command + C' in your terminal to exit rails console.
+Your default web browser should open or a prompt to open a web browser should allow you to then see the app. If not, open the index.html file in a web browser.
+
+The close the program, exit your web browser and type 'contrl/command + C' in your terminal to exit react server.
+
+If you would like to persist your data, download the backend counterpart to this app at (https://github.com/tmtarpinian/bourbon_journal_backend).
+
+Upon download, unzip the contents to the desired directory, and run 'bundle install' to install all the gems required for the rails backend.
+
+From within that directory, run 'rails s' in your terminal, then open 'localhost:3001' The react app running on localhost:3000 should now be able send get and post requests to the back end and persist data.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/ferrisbueller66/FoodShare. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/tmtarpinian/bourbon_journal_frontend. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
@@ -38,7 +41,3 @@ Photo of whiskey glass by Joost Crop https://unsplash.com/@smallcamerabigpicture
 Picture of casks by Daniel Norris https://unsplash.com/@danielnorris
 
 Gold background by pinkzebra https://pixabay.com/users/pinkzebra-1836151/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1123653
-
-## Code of Conduct
-
-Everyone interacting in the IdeTest project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/ferrisbueller66/FoodShare/blob/master/CODE_OF_CONDUCT.md).

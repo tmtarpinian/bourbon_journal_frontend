@@ -1,11 +1,11 @@
 import { combineReducers } from "redux";
 import bourbonReducer from './bourbonReducer'
-import categoriesReducer from './categoriesReducer'
+import categoryReducer from './categoryReducer'
 
  
 const indexReducer = combineReducers({
   bourbons: bourbonReducer,
-  categories: categoriesReducer
+  categories: categoryReducer
 });
  
 export default indexReducer;

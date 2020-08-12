@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import { useHistory } from 'react-router-dom';
 import {newBourbon} from '../actions/BourbonsActions'   
 
 class NewBourbon extends Component {
