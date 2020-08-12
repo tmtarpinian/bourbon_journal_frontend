@@ -7,8 +7,14 @@ function categoriesReducer(
     ) {
     let idx;
     switch (action.type) {
-        case 'ADD_CATEGORY':
-            return [...state, action.category];
+        case 'LOADING_BOURBONS':
+            return {...state, loading: true};
+
+        case 'CATEGORIES':
+            return {...state, categories: action.payload, loading: false};
+
+        case 'NEW_CATEGORY':
+            return {...state, bourbons: [...state.bourbons, action.payload], loading: false}     
 
         case 'DELETE_CATEGORY':
             idx = state.findIndex(category => category.id  === action.id)

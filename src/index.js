@@ -10,6 +10,7 @@ import thunk from 'redux-thunk'
 import './index.css';
 import App from './App';
 import NewBourbon from './containers/NewBourbon'
+import CategoriesContainer from './containers/CategoriesContainer'
 import indexReducer from './reducers/index';
 import {Header, MastHead, Footer} from './components/StaticElements';
 
@@ -24,6 +25,7 @@ ReactDOM.render(
         <MastHead />
         <Route exact path="/bourbons" component={App} /> 
         <Route exact path="/bourbons/new" component={NewBourbon} /> 
+        <Route exact path="/categories" component={CategoriesContainer} /> 
         <Footer />
       </div>
     </Router>
