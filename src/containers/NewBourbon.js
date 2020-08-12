@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import {newBourbon} from '../actions/BourbonsActions'
+import { useHistory } from 'react-router-dom';
+import {newBourbon} from '../actions/BourbonsActions'   //added this
 import BourbonForm from '../components/BourbonForm'
 
 class NewBourbon extends Component {
@@ -13,6 +14,11 @@ class NewBourbon extends Component {
         pairing: ""
     }
 
+    backToBourbons = () => {
+      useHistory()
+    }
+    
+
   handleInputChange = (event) => {
     this.setState({
       [event.target.id]: event.target.value
@@ -21,6 +27,7 @@ class NewBourbon extends Component {
 
   handleOnSubmit = (event) => {
     event.preventDefault();
+    const goToBourbons = useHistory()   //added this 
     this.props.newBourbon(this.state)     
     this.setState({                     //this is NOT clearing the form out
       name: "",
@@ -30,6 +37,8 @@ class NewBourbon extends Component {
       flavornotes: "",
       pairing: ""
     })
+    return(goToBourbons.push('/bourbons'))   //added this
+    
   }
 
   render() {
