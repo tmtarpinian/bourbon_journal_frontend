@@ -75,7 +75,8 @@ body {
 }
 
 /* -----------------KEEP BELOW ----------------- */
-
+/* blue: 2C3F51 */
+/* gold: 2C3F51 */
 
 .btn-block {
   display: block;
@@ -98,6 +99,7 @@ input[type=button].btn-block {
   text-align: center;
   position: relative;
   color: #fff;
+  font-weight: 900;
   background-color: #343a40;
   background: url('casks2.jpg') no-repeat center center;
   background-size: cover;
@@ -10104,6 +10106,9 @@ h3 {
 #mainNav .navbar-nav {
   margin-top: 1rem;
 }
+
+/* --------------UPDATE THIS FOR NAVLINKS------------------ */
+
 #mainNav .navbar-nav li.nav-item a.nav-link {
   color: #fff;
 }
@@ -10114,14 +10119,14 @@ h3 {
   color: #fff;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #EDB458;
+  color: #fff;
 }
-#mainNav .navbar-toggler {
+/* #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.8rem;
-}
+} */
 
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
   #mainNav {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -10150,7 +10155,11 @@ h3 {
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.5em;
   }
-}
+} */
+
+
+
+
 /* THIS IS WHERE I INSERT*/
 header.masthead {
   position: relative;
