@@ -1,6 +1,7 @@
 function categoryReducer(
     state = {
-      categories: [], 
+      categories: [],
+      category: [], 
       loading: false
     },
     action
@@ -12,6 +13,9 @@ function categoryReducer(
 
         case 'CATEGORIES':
             return {...state, categories: action.payload, loading: false};
+
+        case 'CATEGORY':
+            return {...state, category: action.payload, loading: false};
 
         case 'NEW_CATEGORY':
             return {...state, categories: [...state.categories, action.payload], loading: false}     

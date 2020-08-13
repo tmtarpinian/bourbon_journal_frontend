@@ -5,6 +5,15 @@ const allCategories = () => {
         .then(response => response.json())
         .then(categories => dispatch({type: 'CATEGORIES', payload: categories}))
     }
+} 
+
+const showCategories = () => {
+    return dispatch => {
+        dispatch({type: 'LOADING_CATEGORIES'})
+        // fetch("http://localhost:3001/categories/")   need ID
+        .then(response => response.json())
+        .then(category => dispatch({type: 'CATEGORY', payload: category}))
+    }
 }
 
 const newCategory = category => {
@@ -25,5 +34,6 @@ const newCategory = category => {
 
 export {
     allCategories,
-    newCategory
+    newCategory,
+    showCategories
 }
