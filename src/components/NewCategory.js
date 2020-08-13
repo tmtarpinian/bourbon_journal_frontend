@@ -1,15 +1,15 @@
 import React from 'react'
 
- const NewCategory = () => {
+ const NewCategory = (props) => {
     return (
         <div>
-            <form >
+            <form onSubmit={props.handleOnSubmit}>
           <p>
             <label> Name: <br/>
               <input className="form-control"
                 type="text"
                 id="name"
-                
+                onChange={props.handleInputChange}
                 placeholder="name"
               />
             </label>
@@ -22,6 +22,3 @@ import React from 'react'
 export default NewCategory
 
 // need an onsumbit in the form tag
-
-// add onchange after id
-// onChange={this.handleInputChange}

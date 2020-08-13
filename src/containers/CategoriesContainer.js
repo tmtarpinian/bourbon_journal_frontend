@@ -7,15 +7,32 @@ import NewCategory from '../components/NewCategory'
 
 class CategoriesContainer extends Component{
     state = {
-        clickForm: false
+        clickForm: false,
+        name: ""
     }
 
+  handleInputChange = (event) => {
+    this.setState({
+      name: event.target.value
+    });
+  }
+
+  handleOnSubmit = (event) => {
+    event.preventDefault();
+    console.log(this.state.name)
+    // this.props.newBourbon(this.state)
+    // set a timeout with message
+    this.setState({
+      name: "",
+      clickForm: false
+    })
+  }
 
     componentDidMount(){
      this.props.allCategories()
     }
 
-    handleOnClick = (event) => {
+    handleOpenFormClick = (event) => {
         let newState = !this.state.clickForm
         this.setState({
           clickForm: newState
@@ -48,12 +65,12 @@ class CategoriesContainer extends Component{
                             
                         </div>
                     </div>
-                    <input type="submit" value="Add a Category" onClick={this.handleOnClick} class="btn btn-block btn-lg btn-secondary"/>
+                    <input type="submit" value="Add a Category" onClick={this.handleOpenFormClick} class="btn btn-block btn-lg btn-secondary"/>
                 </div>
                 <div>
                     
 
-                    {this.state.clickForm === false ? null : <NewCategory />}
+                    {this.state.clickForm === false ? null : <NewCategory handleOnSubmit={this.handleOnSubmit} handleInputChange={this.handleInputChange}/>}
                 </div>
             </div>
         )
