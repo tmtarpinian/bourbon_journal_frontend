@@ -13,6 +13,7 @@ import NewBourbon from './containers/NewBourbon'
 import CategoriesContainer from './containers/CategoriesContainer'
 import indexReducer from './reducers/index';
 import {Header, MastHead, Footer} from './components/StaticElements';
+import { Home } from './components/Home';
 
 
 const store = createStore(indexReducer, composeWithDevTools(applyMiddleware(thunk)));
@@ -25,7 +26,8 @@ ReactDOM.render(
         <MastHead />
         <Route exact path="/bourbons" component={App} /> 
         <Route exact path="/bourbons/new" component={NewBourbon} /> 
-        <Route exact path="/categories" component={CategoriesContainer} /> 
+        <Route exact path="/categories" component={CategoriesContainer} />
+        <Route exact path="/categories/:id" component={Home} /> 
         <Footer />
       </div>
     </Router>

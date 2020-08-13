@@ -44,9 +44,9 @@ Gold background by pinkzebra https://pixabay.com/users/pinkzebra-1836151/?utm_so
 
 
 
-1. install serializers
-2. run new seed data
-3. ensure associations are correct
+1. [x] install serializers
+2. [x] run new seed data
+3. [x] ensure associations are correct
 4. make "new" categories?
     A. Make a Create New Button on the bottom of the index view
     B. This should be last?
@@ -57,3 +57,7 @@ Gold background by pinkzebra https://pixabay.com/users/pinkzebra-1836151/?utm_so
 6. Make Categories View that shows all bourbons for that category
 7. Add a NavLink to each Category card, incorporating their ID and creating a Restful route
 8. Fix the cards
+
+9. Style links on Categories page
+10. Fix Menu Button on page collapse
+11. Add Social Media images

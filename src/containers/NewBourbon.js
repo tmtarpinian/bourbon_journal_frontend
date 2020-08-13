@@ -40,11 +40,11 @@ class NewBourbon extends Component {
     this.setState({
       name: "",
       distillery: "",
-      proof: null,
-      aged: null,
+      proof: "",
+      aged: "",
       flavornotes: "",
       pairing: "",
-      category_id: null
+      category_id: ""
     })
     this.props.history.push('/bourbons')
 
@@ -53,7 +53,7 @@ class NewBourbon extends Component {
   render() {
     return(
       <div id="new-bourbon">
-        <h2> Add Your Boubon Here</h2>
+        <h2> Add Your Label Here</h2>
         <form onSubmit={this.handleOnSubmit}>
           <p>
             <label>

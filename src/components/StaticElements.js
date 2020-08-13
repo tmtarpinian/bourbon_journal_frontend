@@ -15,8 +15,9 @@ const Header = () => {
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item mx-0 mx-lg-1"><Link to="/bourbons" exact class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger">Bourbons</Link></li>
-                            <li class="nav-item mx-0 mx-lg-1"><Link to="/categories" exact class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger">All Categories</Link></li>
-                            <li class="nav-item mx-0 mx-lg-1"><Link to="/bourbons/new" exact class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger">Add a Bourbon</Link></li>
+                            <li class="nav-item mx-0 mx-lg-1"><Link to="/bourbons" exact class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger">All Drinks</Link></li>
+                            <li class="nav-item mx-0 mx-lg-1"><Link to="/categories" exact class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger">Categories</Link></li>
+                            <li class="nav-item mx-0 mx-lg-1"><Link to="/bourbons/new" exact class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger">Add a Label</Link></li>
                         </ul>
                     </div>
                 </div>
@@ -68,7 +69,7 @@ const Footer = () => {
                     </div>
                    {/* -- Footer Social Icons-- */}
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Around the Web</h4>
+                        <h4 class="text-uppercase mb-4">Follow Us Here</h4>
                         <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
                         <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
                         <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
@@ -78,7 +79,7 @@ const Footer = () => {
                     <div class="col-lg-4">
                         <h4 class="text-uppercase mb-4">About BoJo</h4>
                         <p class="lead mb-0">
-                            BoJo is a free to use, MIT licensed React app created by Trevor tarpinian
+                            BoJo is a free to use, MIT licensed React app created by Trevor Tarpinian
                             <br />
                             <a href="https://github.com/tmtarpinian/bourbon_journal_frontend">Find the Code Here</a>
                             .
