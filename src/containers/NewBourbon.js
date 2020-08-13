@@ -3,15 +3,17 @@ import { connect } from 'react-redux'
 import {newBourbon} from '../actions/BourbonsActions'
 import { allCategories } from '../actions/CategoriesActions'
 
+
+
 class NewBourbon extends Component {
     state = {
-        category_id: null,
         name: "",
         distillery: "",
         proof: null,
         aged: null,
         flavornotes: "",
-        pairing: ""
+        pairing: "",
+        category_id: null
     }
     // fetched all categories to state on mount so accessible in form selections input
   componentDidMount(){
@@ -42,15 +44,14 @@ class NewBourbon extends Component {
       proof: null,
       aged: null,
       flavornotes: "",
-      pairing: ""
+      pairing: "",
+      category_id: null
     })
     this.props.history.push('/bourbons')
 
   }
 
   render() {
-    // const categories = this.props.categories.map((category, i) => {id, name})
-
     return(
       <div id="new-bourbon">
         <h2> Add Your Boubon Here</h2>
@@ -60,12 +61,8 @@ class NewBourbon extends Component {
               Pick A Category:
               <br/>
               <br/>
-              <select className="form-control" id="category" value={this.state.category_id} onChange={this.handleInputChange}>
-                {/* <option value="grapefruit">Grapefruit</option>
-                <option value="lime">Lime</option>
-                <option value="coconut">Coconut</option>
-                <option value="mango">Mango</option>
-                {categories} */}
+              <select className="form-control" id="category_id" value={this.state.category_id} onChange={this.handleInputChange}>
+              <option disabled selected value> -- select an option -- </option>
                 {this.props.categories.map((category) => <option key={category.id} value={category.id}>{category.name}</option>)}
               </select>
             </label>
@@ -138,7 +135,6 @@ class NewBourbon extends Component {
 }
 
 const mapStateToProps = (state) => {
-
   return {
       categories: state.categories.categories
   }
