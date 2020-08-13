@@ -21,7 +21,7 @@ class CategoriesShowContainer extends Component {
                     <div id="bourbon-categories">
                         <div class="container">
                             {/* <!-- Portfolio Section Heading--> */}
-                            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">{this.props.match.params.id}.</h2>
+                            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">{this.props.loading ? "Loading..." : this.props.category.name}</h2>
                             {/* <!-- Icon Divider--> */}
                             <div class="divider-custom">
                                 <div class="divider-custom-line"></div>
@@ -33,7 +33,7 @@ class CategoriesShowContainer extends Component {
                             {/* <!-- Portfolio Grid Items--> */}
                             <div class="row">
          {/*-------------------- insert component here here ------------------------*/}
-                        {this.props.loading ? <h3>Loading....</h3> : bourbons}
+                        {this.props.loading ? null : bourbons}
                             </div>
                         </div>
                     </div>
