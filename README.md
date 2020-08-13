@@ -61,4 +61,4 @@ Gold background by pinkzebra https://pixabay.com/users/pinkzebra-1836151/?utm_so
 9. Style links on Categories page
 10. Fix Menu Button on page collapse
 11. Add Social Media images
-12. Correct Bourbons NavLink
+12. [x] Correct Bourbons NavLink
