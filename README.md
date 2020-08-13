@@ -54,10 +54,11 @@ Gold background by pinkzebra https://pixabay.com/users/pinkzebra-1836151/?utm_so
     A. have a drop down of all categories with all ids
     B. hidden form field with parent_id
     C. Make sure new fetch returns
-6. Make Categories View that shows all bourbons for that category
-7. Add a NavLink to each Category card, incorporating their ID and creating a Restful route
+6. [x] Make Categories View that shows all bourbons for that category
+7. [x] Add a NavLink to each Category card, incorporating their ID and creating a Restful route
 8. Fix the cards
 
 9. Style links on Categories page
 10. Fix Menu Button on page collapse
 11. Add Social Media images
+12. Correct Bourbons NavLink

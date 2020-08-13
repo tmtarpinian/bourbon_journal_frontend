@@ -10,6 +10,7 @@ import thunk from 'redux-thunk'
 import './index.css';
 import App from './App';
 import NewBourbon from './containers/NewBourbon'
+import BourbonsContainer from './containers/BourbonsContainer'
 import CategoriesContainer from './containers/CategoriesContainer'
 import CategoriesShowContainer from './containers/CategoriesShowContainer'
 import indexReducer from './reducers/index';
@@ -24,10 +25,11 @@ ReactDOM.render(
       <div>
         <Header />
         <MastHead />
-        <Route exact path="/bourbons" component={App} /> 
+        <Route exact path="/" component={App} /> 
+        <Route exact path="/bourbons" component={BourbonsContainer} /> 
         <Route exact path="/bourbons/new" component={NewBourbon} /> 
         <Route exact path="/categories" component={CategoriesContainer} />
-        <Route exact path="/categories/:id" component={CategoriesShowContainer} /> 
+        <Route exact path="/categories/:id" component={CategoriesShowContainer} />
         <Footer />
       </div>
     </Router>

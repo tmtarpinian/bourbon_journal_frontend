@@ -14,7 +14,7 @@ const Header = () => {
                     </button>
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item mx-0 mx-lg-1"><Link to="/bourbons" exact class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger">Bourbons</Link></li>
+                            <li class="nav-item mx-0 mx-lg-1"><Link to="/categories/1" exact class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger">Bourbons</Link></li>
                             <li class="nav-item mx-0 mx-lg-1"><Link to="/bourbons" exact class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger">All Drinks</Link></li>
                             <li class="nav-item mx-0 mx-lg-1"><Link to="/categories" exact class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger">Categories</Link></li>
                             <li class="nav-item mx-0 mx-lg-1"><Link to="/bourbons/new" exact class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger">Add a Label</Link></li>
