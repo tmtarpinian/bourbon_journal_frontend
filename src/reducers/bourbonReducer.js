@@ -5,7 +5,6 @@ function bourbonReducer(
     },
     action
     ) {
-    let idx;            //remove this variable if not used for edit/update
     switch (action.type) {
         case 'LOADING_BOURBONS':
             return {...state, loading: true};

@@ -4,13 +4,14 @@ import { showCategories } from '../actions/CategoriesActions'
 import Bourbon from '../components/Bourbon'
 
 class CategoriesShowContainer extends Component {
+    state = {
+        clickForm: false
+    }
+
     componentDidMount(){
         this.props.showCategories(this.props.match.params.id)
        }
     render() {
-        console.log("before load")
-        console.log(this.props.category.bourbons)
-        console.log("after load")
         let bourbons = []
         if (this.props.category.bourbons){
             bourbons = this.props.category.bourbons.map((bourbon, i) => <Bourbon key={i} bourbon={bourbon} deleteButton={this.deleteOnSubmit}/>)
@@ -34,7 +35,6 @@ class CategoriesShowContainer extends Component {
                             <div class="row">
                                 {this.props.loading ? null : bourbons}
                             </div>
-                           {/* Button here */}
                         </div>
                     </div>
                 </div>
