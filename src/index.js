@@ -11,9 +11,9 @@ import './index.css';
 import App from './App';
 import NewBourbon from './containers/NewBourbon'
 import CategoriesContainer from './containers/CategoriesContainer'
+import CategoriesShowContainer from './containers/CategoriesShowContainer'
 import indexReducer from './reducers/index';
 import {Header, MastHead, Footer} from './components/StaticElements';
-import { Home } from './components/Home';
 
 
 const store = createStore(indexReducer, composeWithDevTools(applyMiddleware(thunk)));
@@ -27,7 +27,7 @@ ReactDOM.render(
         <Route exact path="/bourbons" component={App} /> 
         <Route exact path="/bourbons/new" component={NewBourbon} /> 
         <Route exact path="/categories" component={CategoriesContainer} />
-        <Route exact path="/categories/:id" component={Home} /> 
+        <Route exact path="/categories/:id" component={CategoriesShowContainer} /> 
         <Footer />
       </div>
     </Router>
