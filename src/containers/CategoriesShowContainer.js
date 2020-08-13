@@ -32,9 +32,9 @@ class CategoriesShowContainer extends Component {
                             </div>
                             {/* <!-- Portfolio Grid Items--> */}
                             <div class="row">
-         {/*-------------------- insert component here here ------------------------*/}
-                        {this.props.loading ? null : bourbons}
+                                {this.props.loading ? null : bourbons}
                             </div>
+                           {/* Button here */}
                         </div>
                     </div>
                 </div>
