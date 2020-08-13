@@ -19,8 +19,7 @@ class CategoriesContainer extends Component{
 
   handleOnSubmit = (event) => {
     event.preventDefault();
-    console.log(this.state.name)
-    // this.props.newBourbon(this.state)
+    this.props.newCategory(this.state.name)
     // set a timeout with message
     this.setState({
       name: "",
