@@ -26,16 +26,15 @@ class NewBourbon extends Component {
     });
   }
 
-  handleCategoryChange = (event) => {
-    debugger
-    this.setState({
-      category_id: event.target.value
-    });
-  }
+  // handleCategoryChange = (event) => {
+  //   debugger
+  //   this.setState({
+  //     category_id: event.target.value
+  //   });
+  // }
 
   handleOnSubmit = (event) => {
     event.preventDefault();
-    debugger
 
     this.props.newBourbon(this.state)
     this.setState({
