@@ -13,7 +13,7 @@ const Category = (props) => {
                     {/* <!-- <i class="fas fa-plus fa-3x"></i> --> */}
                     </div>
                 </div>
-                <Link key={props.category.id} to={`/bourbons/${props.category.id}`} exact class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger">{props.category.name}</Link>
+                <Link key={props.category.id} to={`/categories/${props.category.id}`} exact class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger">{props.category.name}</Link>
                 {/* <img class="img-fluid" src="assets/img/portfolio/cabin.png" alt=""> */}
             </div>
         </div>

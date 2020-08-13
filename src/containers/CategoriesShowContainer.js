@@ -1,20 +1,27 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { showCategories } from '../actions/CategoriesActions'
+import Bourbon from '../components/Bourbon'
 
 class CategoriesShowContainer extends Component {
-
     componentDidMount(){
-        this.props.showCategories()
+        this.props.showCategories(this.props.match.params.id)
        }
     render() {
+        console.log("before load")
+        console.log(this.props.category.bourbons)
+        console.log("after load")
+        let bourbons = []
+        if (this.props.category.bourbons){
+            bourbons = this.props.category.bourbons.map((bourbon, i) => <Bourbon key={i} bourbon={bourbon} deleteButton={this.deleteOnSubmit}/>)
+        }
         return (
             <div>
                 <div>
                     <div id="bourbon-categories">
                         <div class="container">
                             {/* <!-- Portfolio Section Heading--> */}
-                            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">{this.props.match.params.id}</h2>
+                            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">{this.props.match.params.id}.</h2>
                             {/* <!-- Icon Divider--> */}
                             <div class="divider-custom">
                                 <div class="divider-custom-line"></div>
@@ -26,7 +33,7 @@ class CategoriesShowContainer extends Component {
                             {/* <!-- Portfolio Grid Items--> */}
                             <div class="row">
          {/*-------------------- insert component here here ------------------------*/}
-                                
+                        {this.props.loading ? <h3>Loading....</h3> : bourbons}
                             </div>
                         </div>
                     </div>
@@ -39,7 +46,7 @@ class CategoriesShowContainer extends Component {
 const mapStateToProps = (state) => {
     
     return { 
-        categories: state.categories.categories,
+        category: state.categories.category,               
         loading: state.categories.loading
     }
 }

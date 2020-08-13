@@ -10,6 +10,9 @@ function categoryReducer(
     switch (action.type) {
         case 'LOADING_BOURBONS':
             return {...state, loading: true};
+            
+        case 'LOADING_CATEGORY':
+            return {...state, loading: true};
 
         case 'CATEGORIES':
             return {...state, categories: action.payload, loading: false};

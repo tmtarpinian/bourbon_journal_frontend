@@ -8,9 +8,8 @@ const allCategories = () => {
 } 
 
 const showCategories = id => {
-    debugger
     return dispatch => {
-        dispatch({type: 'LOADING_CATEGORIES'})
+        dispatch({type: 'LOADING_CATEGORY'})
         fetch(`http://localhost:3001/categories/${id}`)   
         .then(response => response.json())
         .then(category => dispatch({type: 'CATEGORY', payload: category}))
