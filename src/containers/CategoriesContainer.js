@@ -2,12 +2,24 @@ import React, { Component} from 'react'
 import Category from '../components/Category'
 import { connect } from 'react-redux'
 import { allCategories, newCategory } from '../actions/CategoriesActions'
+import NewCategory from '../components/NewCategory'
 
 
 class CategoriesContainer extends Component{
+    state = {
+        clickForm: false
+    }
+
 
     componentDidMount(){
      this.props.allCategories()
+    }
+
+    handleOnClick = (event) => {
+        let newState = !this.state.clickForm
+        this.setState({
+          clickForm: newState
+        });
     }
 
     // deleteOnSubmit = (event) => {
@@ -36,12 +48,12 @@ class CategoriesContainer extends Component{
                             
                         </div>
                     </div>
-                    <input type="submit" value="Add a Category" class="btn btn-block btn-lg btn-secondary"/>
+                    <input type="submit" value="Add a Category" onClick={this.handleOnClick} class="btn btn-block btn-lg btn-secondary"/>
                 </div>
                 <div>
                     
 
-                    {/* form here */}
+                    {this.state.clickForm === false ? null : <NewCategory />}
                 </div>
             </div>
         )

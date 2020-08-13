@@ -4,10 +4,7 @@ import { showCategories } from '../actions/CategoriesActions'
 import Bourbon from '../components/Bourbon'
 
 class CategoriesShowContainer extends Component {
-    state = {
-        clickForm: false
-    }
-
+   
     componentDidMount(){
         this.props.showCategories(this.props.match.params.id)
        }
