@@ -7,10 +7,11 @@ const allCategories = () => {
     }
 } 
 
-const showCategories = () => {
+const showCategories = id => {
+    debugger
     return dispatch => {
         dispatch({type: 'LOADING_CATEGORIES'})
-        // fetch("http://localhost:3001/categories/")   need ID
+        fetch(`http://localhost:3001/categories/${id}`)   
         .then(response => response.json())
         .then(category => dispatch({type: 'CATEGORY', payload: category}))
     }
