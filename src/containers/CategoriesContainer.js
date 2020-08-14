@@ -67,7 +67,7 @@ class CategoriesContainer extends Component{
                 <div>
                     
 
-                    {this.state.clickForm === false ? null : <NewCategory handleOnSubmit={this.handleOnSubmit} handleInputChange={this.handleInputChange}/>}
+                    {this.state.clickForm === false ? null : <div id="new-bourbon"> <NewCategory handleOnSubmit={this.handleOnSubmit} handleInputChange={this.handleInputChange}/> </div>}
                 </div>
             </div>
         )

@@ -5,6 +5,7 @@ import React from 'react'
         <div>
             <form onSubmit={props.handleOnSubmit}>
           <p>
+            <h3>Add a New Category</h3>
             <label> Name: <br/>
               <input className="form-control"
                 type="text"
