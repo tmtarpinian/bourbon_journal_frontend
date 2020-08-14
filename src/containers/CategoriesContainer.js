@@ -11,24 +11,15 @@ class CategoriesContainer extends Component{
         name: ""
     }
 
-  handleInputChange = (event) => {
-    this.setState({
-      name: event.target.value
-    });
-  }
-
-  handleOnSubmit = (event) => {
-    event.preventDefault();
-    this.props.newCategory(this.state.name)
-    // set a timeout with message
-    this.setState({
-      name: "",
-      clickForm: false
-    })
-  }
-
     componentDidMount(){
-     this.props.allCategories()
+        this.props.allCategories()
+    }
+   
+
+    handleInputChange = (event) => {
+        this.setState({
+        name: event.target.value
+        });
     }
 
     handleOpenFormClick = (event) => {
@@ -38,9 +29,16 @@ class CategoriesContainer extends Component{
         });
     }
 
-    // deleteOnSubmit = (event) => {
-    //     this.props.deleteCategory(event.target.id)
-    // }
+    handleOnSubmit = (event) => {
+        event.preventDefault();
+        this.props.newCategory(this.state)
+        // set a timeout with message
+        this.setState({
+        name: "",
+        clickForm: false
+        })
+    }
+
 
     render() {
         const categories = this.props.categories.map((category, i) => <Category key={i} category={category} deleteButton={this.deleteOnSubmit}/>)

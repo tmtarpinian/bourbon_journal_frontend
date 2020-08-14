@@ -28,6 +28,7 @@ const newCategory = category => {
         body: JSON.stringify(category)
       })
       .then(response => response.json())
+      .then(console.log(category))
       .then(category => dispatch({type: 'NEW_CATEGORY', payload: category}))
     }
 }
