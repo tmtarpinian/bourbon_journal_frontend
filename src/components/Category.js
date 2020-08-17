@@ -8,8 +8,8 @@ const Category = (props) => {
                 {/* <!-- Portfolio Item 1--> */}
                 <div className="bourbon-category-content">
              
-                        <Link key={props.category.id} to={`/categories/${props.category.id}`} exact class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger">{props.category.name}</Link>
-                
+                       <h3> <Link key={props.category.id} to={`/categories/${props.category.id}`} exact class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger">{props.category.name}</Link>
+                       </h3>
                 </div>
             </div>
     )
