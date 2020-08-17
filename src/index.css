@@ -74,7 +74,7 @@ body {
   outline: 0 !important;
 }
 
-/* -----------------KEEP BELOW ----------------- */
+/* -----------------PRIMARY BUTTON ----------------- */
 /* blue: 2c3e50 */
 /* gold: EDB458 */
 
@@ -92,6 +92,8 @@ input[type=button].btn-block {
   width: 250px;
 } 
 
+
+
 /* -----------------KEEP ABOVE ----------------- */
 
 #bourbon-categories{
@@ -104,10 +106,11 @@ input[type=button].btn-block {
   padding-bottom: 4rem;
 }
 
-#bourbon-category{
+.bourbon-category{
   display: block; 
   text-align: center;
   position: relative;
+  width: 30%;
   background: #2c3e50;
   color: #fff;
   
@@ -115,6 +118,19 @@ input[type=button].btn-block {
   background-size: cover;
   padding-top: 8rem;
   padding-bottom: 8rem;
+}
+
+
+.bourbon-category:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.bourbon-category-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 #new-bourbon {
@@ -128,6 +144,10 @@ input[type=button].btn-block {
   background-size: cover;
   padding-top: 8rem;
   padding-bottom: 8rem;
+}
+
+.index-delete-button{
+
 }
 
 hr {
@@ -10257,6 +10277,27 @@ header.masthead h1 {
     font-size: 1.5rem;
   }
 }
+
+
+/* NOTES
+.square {
+  position: relative;
+  width: 50%;
+}
+
+.square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+NOTES */
+
 .portfolio .portfolio-item {
   cursor: pointer;
   position: relative;
