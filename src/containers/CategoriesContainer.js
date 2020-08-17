@@ -62,7 +62,7 @@ class CategoriesContainer extends Component{
                             
                         </div>
                     </div>
-                    <input type="submit" value="Add a Category" onClick={this.handleOpenFormClick} className="btn btn-block btn-lg btn-secondary"/>
+                    <input type="submit" value="Add a Category" onClick={this.handleOpenFormClick} class="btn btn-block btn-lg btn-secondary"/>
                 </div>
                 <div>
                     
