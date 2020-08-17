@@ -126,7 +126,7 @@ class NewBourbon extends Component {
               />
             </label>
           </p>
-          <input type="submit" class="btn btn-block btn-lg btn-primary"/>
+          <input type="submit" className="btn btn-block btn-lg btn-primary"/>
         </form>
       </div>
     )
