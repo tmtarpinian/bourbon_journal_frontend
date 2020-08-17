@@ -21,5 +21,3 @@ import React from 'react'
     )
 }
 export default NewCategory
-
-// need an onsumbit in the form tag

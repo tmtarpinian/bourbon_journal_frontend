@@ -1,13 +1,13 @@
 import React from 'react'
 
-export const Home = () => {
+const Home = () => {
     return (
         <div>
             <div>
                     <div id="bourbon-categories">
                         <div class="container">
                             {/* <!-- Portfolio Section Heading--> */}
-                            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Start Journaling by Using the Links Above</h2>
+                            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Welcome to the Bourbon Journal</h2>
                             {/* <!-- Icon Divider--> */}
                             <div class="divider-custom">
                                 <div class="divider-custom-line"></div>

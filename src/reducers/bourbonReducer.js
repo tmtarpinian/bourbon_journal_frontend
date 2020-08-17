@@ -16,7 +16,7 @@ function bourbonReducer(
             return {...state, bourbons: [...state.bourbons, action.payload], loading: false}     
 
         case 'DELETE_BOURBON':
-            return {...state, bourbons: state.bourbons.filter(bourbon => bourbon.id  != action.payload)}
+            return {...state, bourbons: state.bourbons.filter(bourbon => bourbon.id  !== parseInt(action.payload))}
         default:
             return state;
     }

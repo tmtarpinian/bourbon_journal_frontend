@@ -47,7 +47,7 @@ Gold background by pinkzebra https://pixabay.com/users/pinkzebra-1836151/?utm_so
 1. [x] install serializers
 2. [x] run new seed data
 3. [x] ensure associations are correct
-4. make "new" categories?
+4. [x] make "new" categories?
     A. Make a Create New Button on the bottom of the index view
     B. This should be last?
 5. update create bourbons to 
