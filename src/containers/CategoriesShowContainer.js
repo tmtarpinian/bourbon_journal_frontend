@@ -6,9 +6,11 @@ import Bourbon from '../components/Bourbon'
 class CategoriesShowContainer extends Component {
    
     componentDidMount(){
+        console.log("componentDidMount - running ShowCategories action")
         this.props.showCategories(this.props.match.params.id)
        }
     render() {
+        console.log("rendering ShowCategories")
         let bourbons = []
         if (this.props.category.bourbons){
             bourbons = this.props.category.bourbons.map((bourbon, i) => <Bourbon key={i} bourbon={bourbon} deleteButton={this.deleteOnSubmit}/>)
@@ -41,7 +43,7 @@ class CategoriesShowContainer extends Component {
 }
 
 const mapStateToProps = (state) => {
-    
+    console.log("Running mapstatetoProps on Categories Container")
     return { 
         category: state.categories.category,               
         loading: state.categories.loading

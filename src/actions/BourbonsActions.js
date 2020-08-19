@@ -18,7 +18,6 @@ const newBourbon = bourbon => {
         },
         body: JSON.stringify(bourbon)
       })
-      .then(response => response.json())
       .then(bourbon => dispatch({type: 'NEW_BOURBON', payload: bourbon}))
     }
 }

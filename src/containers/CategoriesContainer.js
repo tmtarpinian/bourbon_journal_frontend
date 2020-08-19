@@ -75,7 +75,6 @@ class CategoriesContainer extends Component{
 }
 
 const mapStateToProps = (state) => {
-    
     return { 
         categories: state.categories.categories,
         loading: state.categories.loading

@@ -33,7 +33,6 @@ class BourbonsContainer extends Component{
                         {/* <!-- Portfolio Grid Items--> */}
                         <div className="row">
                             {bourbons}
-                            
                         </div>
                     </div>
                 </div>
@@ -44,7 +43,6 @@ class BourbonsContainer extends Component{
 }
 
 const mapStateToProps = (state) => {
-    
     return { 
         bourbons: state.bourbons.bourbons,
         loading: state.bourbons.loading
