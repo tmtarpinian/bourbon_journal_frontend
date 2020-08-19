@@ -26,13 +26,6 @@ class NewBourbon extends Component {
     });
   }
 
-  // handleCategoryChange = (event) => {
-  //   debugger
-  //   this.setState({
-  //     category_id: event.target.value
-  //   });
-  // }
-
   handleOnSubmit = (event) => {
     event.preventDefault();
 
@@ -61,7 +54,8 @@ class NewBourbon extends Component {
               <br/>
               <br/>
               <select className="form-control" id="category_id" value={this.state.category_id} onChange={this.handleInputChange}>
-              <option disabled selected value> -- select an option -- </option>
+              <option disabled selected value> -- select an option -- </option>   
+              {/* The line above is throwing a warning */}
                 {this.props.categories.map((category) => <option key={category.id} value={category.id}>{category.name}</option>)}
               </select>
             </label>
