@@ -26,7 +26,7 @@ function categoryReducer(
         case 'DELETE_CATEGORY':
             idx = state.findIndex(category => category.id  === action.id)
             return [...state.slice(0, idx), ...state.slice(idx + 1)];
-   
+        // DELETE_CATEGORY is NOT being employed yet and will need code updated
         default:
             return state;
     }
