@@ -1,8 +1,43 @@
-# bourbon_journal_frontend
+# Bourbon Journal (frontend)
 
-This React app utilizes Redux and allows users to journal the flavor profiles and tasting of different whiskeys. Data can persisted with a Ruby on Rails backend and SQLite3 database.
+![Project Image](./src/bourbon.jpg)
 
-## Usage
+> An app to track the bourbon enthusiast journal their tastings.
+
+![forks badge](https://img.shields.io/github/forks/tmtarpinian/bourbon_journal_frontend)
+![stars badge](https://img.shields.io/github/stars/tmtarpinian/bourbon_journal_frontend)
+
+
+### Table of Contents
+
+
+- [Description](#Description)
+- [Deploy the App](#Deploy)
+- [Components](#Pages)
+    - [Src](#Src)
+    - [Actions](#Actions)
+    - [Components](#Components)
+    - [Containers](#Containers)
+    - [Reducers](#Reducers)
+- [Contributing](#Contributing)
+- [Acknowledgements](#Acknowledgements)
+- [Code of Conduct](#Conduct)
+- [Maintainers](#Maintainer(s))
+- [License](#license)
+
+---
+
+## Description
+This React app utilizes Redux and allows users to journal the flavor profiles and tasting of different whiskeys. Data can be persisted to a Postgresql database and fetched via [a Ruby on Rails API](https://github.com/tmtarpinian/bourbon_journal_backend).
+
+### Technologies
+- Ruby
+- Rails
+- Postgresql
+- React
+- Redux
+
+## Deploy
 
 To use Bourbon Journal, download a zipped file from Github (https://github.com/tmtarpinian/bourbon_journal_frontend).
 
@@ -22,22 +57,73 @@ Upon download, unzip the contents to the desired directory, and run 'bundle inst
 
 From within that directory, run 'rails s' in your terminal, then open 'localhost:3001' The react app running on localhost:3000 should now be able send get and post requests to the back end and persist data.
 
+## Components
+> Note that the structure of this documentation is broken up by folder. Headings will represent top level folders, and blockquotes will represent nested folders
+
+### Src
+
+| Name | Purpose | How To View | JDoc |
+|---|---|---|---|
+|  App.js | TODO | finish documentation |  [code](./src/App.js.rb#L6-L13) |
+---
+
+### Actions
+
+| Name | Purpose | How To View | JDoc |
+|---|---|---|---|
+|  | TODO | finish documentation |  [code](./src/App.js.rb#L6-L13) |
+---
+
+### Components
+
+| Name | Purpose | How To View | JDoc |
+|---|---|---|---|
+|  | TODO | finish documentation |  [code](./src/App.js.rb#L6-L13) |
+---
+
+### Containers
+
+| Name | Purpose | How To View | JDoc |
+|---|---|---|---|
+|  | TODO | finish documentation |  [code](./src/App.js.rb#L6-L13) |
+---
+
+### Reducers
+
+| Name | Purpose | How To View | JDoc |
+|---|---|---|---|
+|  | TODO | finish documentation |  [code](./src/App.js.rb#L6-L13) |
+---
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/tmtarpinian/bourbon_journal_frontend. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
-## License
-
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
 ## Acknowledgements
 
-Special thanks to David T. Miller for the use of his header/footer designs, which I incorporated into my navbar. Find the repo for his bootstrap theme here: https://github.com/StartBootstrap/startbootstrap-freelancer.
+Special thanks to David T. Miller for the use of his header/footer designs, which I incorporated into my navbar. [Find the repo for his bootstrap theme here](https://github.com/StartBootstrap/startbootstrap-freelancer).
 
-I also adopted his masthead from his landing page theme here: https://github.com/StartBootstrap/startbootstrap-landing-page.
+I also adopted his masthead from [his landing page theme here](https://github.com/StartBootstrap/startbootstrap-landing-page).
 
-Photo of whiskey glass by Joost Crop https://unsplash.com/@smallcamerabigpictures
+Photo of whiskey glass by [Joost Crop]((https://unsplash.com/@smallcamerabigpictures) )
 
-Picture of casks by Daniel Norris https://unsplash.com/@danielnorris
+Picture of casks by [Daniel Norris](https://unsplash.com/@danielnorris)
 
-Gold background by pinkzebra https://pixabay.com/users/pinkzebra-1836151/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1123653
+Gold background by [pinkzebra](https://pixabay.com/users/pinkzebra-1836151/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1123653)
+
+## Conduct
+Everyone using and interacting in Garden Helper's code
+bases, issue trackers, chat rooms and/or mailing lists is expected to follow the [Code of conduct](./CODE_OF_CONDUCT.md).
+
+## Maintainer(s)
+---
+
+| ![tmtarpinian](./src/tmtarpinian.jpg)     |
+| :------------- | 
+|[@tmtarpinian](https://github.com/tmtarpinian) |
+
+## License
+Copyright © 2020 Trevor Tarpinian
+
+The app is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
