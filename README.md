@@ -4,7 +4,7 @@ This React app utilizes Redux and allows users to journal the flavor profiles an
 
 ## Usage
 
-To use SoodSoure, download a zipped file from Github (https://github.com/tmtarpinian/bourbon_journal_frontend).
+To use Bourbon Journal, download a zipped file from Github (https://github.com/tmtarpinian/bourbon_journal_frontend).
 
 Please have ruby, rails, node.js, and react installed prior to running this application.
 
