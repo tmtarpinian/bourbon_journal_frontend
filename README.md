@@ -2,7 +2,7 @@
 
 ![Project Image](./src/bourbon.jpg)
 
-> An app to track the bourbon enthusiast journal their tastings.
+> An app that allows bourbon enthusiasts to journal their tastings.
 
 ![forks badge](https://img.shields.io/github/forks/tmtarpinian/bourbon_journal_frontend)
 ![stars badge](https://img.shields.io/github/stars/tmtarpinian/bourbon_journal_frontend)
