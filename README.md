@@ -13,12 +13,6 @@
 
 - [Description](#Description)
 - [Deploy the App](#Deploy)
-- [Components](#Pages)
-    - [Src](#Src)
-    - [Actions](#Actions)
-    - [Components](#Components)
-    - [Containers](#Containers)
-    - [Reducers](#Reducers)
 - [Contributing](#Contributing)
 - [Acknowledgements](#Acknowledgements)
 - [Code of Conduct](#Conduct)
@@ -56,44 +50,6 @@ If you would like to persist your data, download the backend counterpart to this
 Upon download, unzip the contents to the desired directory, and run 'bundle install' to install all the gems required for the rails backend.
 
 From within that directory, run 'rails s' in your terminal, then open 'localhost:3001' The react app running on localhost:3000 should now be able send get and post requests to the back end and persist data.
-
-## Components
-> Note that the structure of this documentation is broken up by folder. Headings will represent top level folders, and blockquotes will represent nested folders
-
-### Src
-
-| Name | Purpose | How To View | JDoc |
-|---|---|---|---|
-|  App.js | TODO | finish documentation |  [code](./src/App.js.rb#L6-L13) |
----
-
-### Actions
-
-| Name | Purpose | How To View | JDoc |
-|---|---|---|---|
-|  | TODO | finish documentation |  [code](./src/App.js.rb#L6-L13) |
----
-
-### Components
-
-| Name | Purpose | How To View | JDoc |
-|---|---|---|---|
-|  | TODO | finish documentation |  [code](./src/App.js.rb#L6-L13) |
----
-
-### Containers
-
-| Name | Purpose | How To View | JDoc |
-|---|---|---|---|
-|  | TODO | finish documentation |  [code](./src/App.js.rb#L6-L13) |
----
-
-### Reducers
-
-| Name | Purpose | How To View | JDoc |
-|---|---|---|---|
-|  | TODO | finish documentation |  [code](./src/App.js.rb#L6-L13) |
----
 
 ## Contributing
 
